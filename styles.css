@@ -1,0 +1,391 @@
+/* Body of page. Background #f9fafc. 
+Gray text: #69696a  
+Black text and button background #00
+button text #fff
+Footer background rgba(247, 193, 162, 0.7) */
+
+body {
+    background-color: #f9fafc;
+    font-family: 'Open Sans';
+    padding: 10px;
+    height: 100%;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* header will be flexbox with space between to push them to either side of the page */
+    /* header icon "chirpus inc" .header_icon */
+
+.nav_header {
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: middle;
+    margin: 0 0 150px 0;
+}
+
+.links_list {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header_icon {
+    font-size: 12pt;
+    margin: 0;
+}
+
+.header_nav_link {
+    margin: 0 7px;
+}
+
+.header_nav_link_hire_us {
+    margin: 0 7px;
+    background-color: #000;
+    border-radius: 25px;
+    border-style: none;
+}
+
+.nav_link {
+    font-size: 12pt;
+    color: #69696a;
+}
+
+
+.hire_link {
+    margin: 0 5px;
+    color: #FFF;
+    background-color: #000;
+}
+
+/* Info section. Left Section is for company info and right is for the circle graphic */
+
+.info_circle_div {
+    display: flex;
+    flex-direction: row;
+}
+
+/* about us section */
+
+.about_us_section {
+    width: 50vmax;
+}
+
+.about_us_chirups {
+    font-size: 16pt;
+}
+
+.about_us_paragraph {
+    font-size: 12px;
+    color: #69696a;
+    border-left-style: solid;
+    border-color:#69696a;
+    padding: 0 0 0 10px;
+}
+
+.call_to_action_button {
+    background-color: #000;
+    text-decoration: none;
+    width: 100%;
+    height: 26px;
+    border-style: none;
+    border-radius: 25px;
+    
+}
+
+.call_to_action_link {
+    color: #FFF;
+    font-size: 10px;
+}
+
+/* circles section */
+
+.circles_section {
+    width: 50vmax;
+    position: relative;
+}
+
+.circle_big {
+    height: 11rem;
+    width: 11rem;
+    border-radius: 100%;
+    background-color:rgba(247, 136, 167, 0.6) ;
+    position: absolute;
+    right: 7rem;
+}
+
+.circle_medium {
+    height: 9rem;
+    width: 9rem;
+    border-radius: 100%;
+    background-color:rgba(247, 193, 162, 0.7);
+    position: absolute;
+    right: 3rem;
+    top: 6.5rem;
+}
+
+.circle_small {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 100%;
+    background-color:rgba(207, 130, 213, 0.6);
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+}
+
+
+/* footer container */
+
+.footer_container {
+    background-color: rgba(247, 193, 162, 0.7);
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    max-width: 100vw;
+}
+
+.footer_logo {
+    font-size: 12pt;
+    color: black;
+    margin: 0;
+}
+
+.footer_nav_buttons {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer_nav_li {
+    margin: 0 5px;
+}
+
+.footer_link {
+    color: #69696a;
+    font-size: 12pt;
+}
+
+
+    /* navigation bar with 4 list items. .header_nav_links  no background color or borders, no underline */
+    /* header_nav_link_hire_us  specifically the hire us link is going to be white text, black background with rounded corners */
+
+/* .info_circle_div this div holds both the about us information as well as the  colored circles image. These will be flexbox space between */
+
+    /* .about_us_section  will have logo about me section with only a border on the left and then the mission statement button underneath */
+
+    /* .circles_div  contains the 3 circles. these are divs colors in style */
+
+/* .footer_container  this contains the h3 chirpus inc. logo and the nav with three links. THis will be separated as flexbox space between */
+
+
+@media only screen and (max-width: 768px) {
+
+    body {
+        background-color: #f9fafc;
+        font-family: 'Open Sans';
+        padding: 10px;
+        height: 100%;
+        margin: 0;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+    
+    /* header will be flexbox with space between to push them to either side of the page */
+        /* header icon "chirpus inc" .header_icon */
+    
+    .nav_header {
+        color: #000;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        vertical-align: middle;
+        margin: 0 0 20px 0;
+    }
+
+    .navigation_bar {
+        width: 100%;
+    }
+    
+    .links_list {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        width: 99%;
+    }
+    
+    .header_icon {
+        font-size: 12pt;
+        margin: 0 0 8px 0;
+    }
+    
+    .header_nav_link {
+        margin: 8px 2px;
+
+    }
+    /*
+    .header_nav_link_hire_us {
+        margin: 8px 2px;
+        background-color: black;
+        border-radius: 25px;
+    }
+*/
+    .header_nav_link_hire_us {
+        background-color: #000;
+        text-decoration: none;
+        width: 100%;
+        height: 26px;
+        border-style: none;
+        border-radius: 25px;
+        margin: 8px 2px;
+        
+    }
+    
+    .nav_link {
+        font-size: 12pt;
+        color: #69696a;
+    }
+    
+    
+    .hire_link {
+        margin: 0 5px;
+        color: #FFF;
+        background-color: black;
+    }
+    
+    /* Info section. Left Section is for company info and right is for the circle graphic */
+    
+    .info_circle_div {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    /* about us section */
+    
+    .about_us_section {
+        width: 100vmax;
+    }
+    
+    .about_us_chirups {
+        font-size: 16pt;
+    }
+    
+    .about_us_paragraph {
+        font-size: 12px;
+        color: #69696a;
+        border-left-style: solid;
+        border-color:#69696a;
+        padding: 0 0 0 10px;
+    }
+    
+    .call_to_action_button {
+        background-color: black;
+        text-decoration: none;
+        width: 100%;
+        height: 26px;
+        border-style: none;
+        border-radius: 25px;
+        
+    }
+    
+    .call_to_action_link {
+        color: #FFF;
+        font-size: 10px;
+    }
+    
+    /* circles section */
+    
+    .circles_section {
+        height: 0;
+        width: 0;
+    }
+    
+    .circle_big {
+        height: 0;
+        width: 0;
+    }
+    
+    .circle_medium {
+        height: 0;
+        width: 0;
+        border-radius: 100%;
+        background-color:rgba(247, 193, 162, 0.7);
+        position: relative;
+        left: 450px;
+        bottom: 75px;
+    }
+    
+    .circle_small {
+        height: 125px;
+        width: 125px;
+        border-radius: 100%;
+        background-color:rgba(207, 130, 213, 0.6);
+        position: relative;
+        left: 500px;
+        bottom: 300px;
+    }
+    
+    
+    /* footer container */
+    
+    .footer_container {
+        background-color: rgba(247, 193, 162, 0.7);
+        height: 24px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 10px;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        max-width: 100vw;
+    }
+    
+    .footer_logo {
+        font-size: 12pt;
+        color: black;
+        margin: 0;
+    }
+    
+    .footer_nav_buttons {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .footer_nav_li {
+        margin: 0 5px;
+    }
+    
+    .footer_link {
+        color: #69696a;
+        font-size: 12pt;
+    }
+    
+}
